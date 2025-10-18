@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styling/SignUp.css" />
+    <link rel="stylesheet" href="Login.html" />
+  </head>
+  <style>
+    /* Reset & font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Container */
+    .login-container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Form */
+    .login-form h2 {
+      margin-bottom: 10px;
+      color: #333;
+      text-align: center;
+    }
+
+    /* .login-form p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+} */
+    .login-form label {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border 0.3s;
+      font-size: 15px;
+    }
+
+    .login-form input:focus {
+      border-color: #667eea;
+      outline: none;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background: #667eea;
+      border: none;
+      color: white;
+      font-size: 17px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-form button:hover {
+      background: #5a67d8;
+    }
+
+    .extra-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .extra-links a {
+      color: #667eea;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .extra-links a:hover {
+      color: #4c51bf;
+    }
+  </style>
+  <body>
+    <div class="login-container">
+      <form class="login-form">
+        <h2>SignUp</h2>
+
+        <label for="name">Username:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your Username"
+          required
+        />
+
+        <label for="email"> Your Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        />
+        <label for="Password">Enter Password:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder=" Enter your Password"
+          required
+        />
+
+        <label for="conform-password"> Conform password:</label>
+        <input
+          type="password"
+          name="conform password"
+          id=""
+          placeholder="Conform  password"
+          required
+        />
+
+        <button type="submit">SignUp</button>
+
+        <div class="extra-links">
+          <a href="#">Forgot Password?</a>
+          <p>You have already account?<a href="./Login.html">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

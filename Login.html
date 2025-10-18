@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styling/Login.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background-color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Container */
+    .login-container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(37, 112, 250, 0.2);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    /* Form */
+    .login-form h2 {
+      margin-bottom: 10px;
+      color: #333;
+      text-align: center;
+    }
+
+    .login-form label {
+      display: block;
+      margin-bottom: 3px;
+      color: #444;
+    }
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border 0.3s;
+    }
+
+    .login-form input:focus {
+      border-color: #667eea;
+      outline: none;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 12px;
+      background: #667eea;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-form button:hover {
+      background: #5a67d8;
+    }
+
+    .extra-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .extra-links a {
+      color: #667eea;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .extra-links a:hover {
+      color: #4c51bf;
+    }
+  </style>
+  <body>
+    <!-- this is the main container -->
+    <div class="login-container">
+      <form class="login-form">
+        <h2>Login</h2>
+
+        <label for="name">Username:</label>
+        <input type="text" placeholder="Enter your Username" required />
+        <label for="Password">Password:</label>
+        <input type="password" placeholder=" Enter your Password" required />
+
+        <button type="submit">Login</button>
+
+        <div class="extra-links">
+          <a href="#">Forgot Password?</a>
+          <a href="./SignUp.html">Create an Account</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
