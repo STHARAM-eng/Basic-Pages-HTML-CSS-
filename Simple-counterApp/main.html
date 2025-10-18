@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple counter app</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="counter">
+        <p id="count">0</p>
+      </div>
+
+      <!-- start incremet & decrement button -->
+      <div class="btn-button">
+        <button onclick="dec()">Decrement</button>
+        <button onclick="inc()">Increment</button>
+      </div>
+
+      <!-- start increment and decrement screen-->
+       <div class="clicks">
+            <p>Clicks on Increment: <span id="incCount">0</span></p>
+            <p>Clicks on Decrement: <span id="decCount">0</span></p>
+        </div>
+    </div>
+
+    <!-- start javascript part -->
+    <script src="main.js"></script>
+  </body>
+</html>
